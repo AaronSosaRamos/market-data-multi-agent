@@ -1,0 +1,6 @@
+uv
+crewai
+crewai_tools
+crewai[tools]
+firecrawl-py
+streamlit

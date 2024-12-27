@@ -1,0 +1,36 @@
+web_scraping_task:
+  description: >
+    Collect and extract relevant data about the {market_segment} sector in a {market_size} market.
+    Make sure all data is accurate, well-organized, and retrieved in {lang} to support subsequent analysis.
+  expected_output: >
+    A structured dataset with relevant information about the {market_segment} market in {lang}.
+    Include any notable trends, competitor information, and key metrics.
+  agent: web_scraper
+
+market_analysis_task:
+  description: >
+    Analyze trends and insights from the {market_segment} sector in a {market_size} market using the provided data.
+    Focus on identifying patterns, market opportunities, and challenges, and ensure the findings are presented in {lang}.
+  expected_output: >
+    A report with an executive summary, analysis of trends, competitor benchmarking, and actionable insights for the {market_segment} market.
+    The report should be in Markdown format with clear sections and headings.
+  agent: market_data_analyst
+
+strategy_generation_task:
+  description: >
+    Develop a comprehensive strategy for the {market_segment} sector in a {market_size} market using the provided analysis and data.
+    Ensure the strategy includes actionable recommendations, potential risks, and mitigation plans, all presented in {lang}.
+  expected_output: >
+    A strategy document formatted as Markdown, outlining objectives, key actions, and a roadmap tailored to the {market_segment} market.
+    Include sections on opportunities, challenges, and implementation steps.
+  agent: market_data_strategy_generator
+
+market_result_generation_task:
+  description: >
+    Generate a consolidated Markdown (MD) document that synthesizes all findings, analyses, and strategies for the {market_segment} sector in a {market_size} market.
+    Ensure the document is well-structured, easy to understand, and tailored to the target audience in {lang}.
+  expected_output: >
+    A Markdown file containing a comprehensive overview of the market research, analysis, and strategy, formatted with headings, bullet points, and tables as necessary.
+    Include an introduction, detailed sections, and a concluding summary.
+  agent: market_research_result_generator
+  output_file: market_research_summary.md
